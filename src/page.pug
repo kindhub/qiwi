@@ -1,0 +1,278 @@
+extends ./pug/layout
+
+block content
+	<!-- START FIRST-SCREEN -->
+	.section.first-screen 
+		.container 
+			.first-screen__inner
+				.first-screen__content 
+					.first-screen__title В QIWI UZBEKISTAN РЕШАЕТ КАЖДЫЙ
+					.first-screen__text 
+						p Мы разрабатываем удобные финансовые <br> инструменты для людей и бизнеса и делаем это <br> по‑своему: в атмосфере свободы, доверия и драйва
+					.first-screen__btn.vacancy-btn Найти вакансию
+				.first-screen__img-wrapper 
+					img(src="https://hhcdn.ru/file/17594345.png")
+	<!-- END FIRST-SCREEN -->
+
+	<!-- START PRODUCTS -->
+	.section.products 
+		.container 
+			.products__inner 
+				.products__title Наша команда работает над линейкой продуктов
+				.products__items 
+					+product-icon("https://hhcdn.ru/ichameleon/308844.svg", "QIWI кошелек")
+					+product-icon("https://hhcdn.ru/ichameleon/308846.svg", "Эквайринг")
+					+product-icon("https://hhcdn.ru/ichameleon/308843.svg", "ПЛАТЕЖИ И ПЕРЕВОДЫ")
+					+product-icon("https://hhcdn.ru/ichameleon/308845.svg", "Выплаты")
+	<!-- END PRODUCTS -->
+
+	<!-- START VALUES -->
+	.section.values 
+		.swiper-container.values__slider 
+			.swiper-wrapper 
+				.swiper-slide
+					.values__slide.values__slide--one 
+						.values__content 
+							.values__text 
+								p Как мы работаем в QIWI Uzbekistan
+							.values__card 
+								.values__card-numb 01
+								.values__card-title Решаем задачи <br> по-своему
+								.values__card-text 
+									p С нас — работа на стыке ИТ, банкинга и финансов. С тебя — варианты достижения цели, так что не бойся экспериментировать и творить
+							.slider-arrows.values__slider-arrows
+								.slider-arrow.slider-arrow--prev.values-slider-arrow-prev
+									+icon("arrow-left", "slider-arrow__icon")
+								.slider-arrow.slider-arrow--next.values-slider-arrow-next
+									+icon("arrow-right", "slider-arrow__icon")
+						.values__img-wrapper 
+							img(src="https://hhcdn.ru/file/17594346.png")
+				.swiper-slide
+					.values__slide.values__slide--two 
+						.values__content 
+							.values__text 
+								p Как мы работаем в QIWI Uzbekistan
+							.values__card 
+								.values__card-numb 02
+								.values__card-title ДЕЙСТВУЕМ <br> БЕЗ БЮРОКРАТИИ
+								.values__card-text 
+									p Мы верим, что самое важное в работе — скорость принятия решений, свободная коммуникация и результат
+							.slider-arrows.values__slider-arrows
+								.slider-arrow.slider-arrow--prev.values-slider-arrow-prev
+									+icon("arrow-left", "slider-arrow__icon")
+								.slider-arrow.slider-arrow--next.values-slider-arrow-next
+									+icon("arrow-right", "slider-arrow__icon")
+						.values__img-wrapper 
+							img(src="https://hhcdn.ru/file/17594347.png")
+				.swiper-slide
+					.values__slide.values__slide--three 
+						.values__content 
+							.values__text 
+								p Как мы работаем в QIWI Uzbekistan
+							.values__card 
+								.values__card-numb 03
+								.values__card-title У НАС НЕТ <br> «БИГ-БОССОВ»
+								.values__card-text 
+									p В QIWI плоская структура и нет односторонних коммуникаций — <br> сотрудники свободно общаются с менеджерами и отстаивают точку  зрения
+							.slider-arrows.values__slider-arrows
+								.slider-arrow.slider-arrow--prev.values-slider-arrow-prev
+									+icon("arrow-left", "slider-arrow__icon")
+								.slider-arrow.slider-arrow--next.values-slider-arrow-next
+									+icon("arrow-right", "slider-arrow__icon")
+						.values__img-wrapper 
+							img(src="https://hhcdn.ru/file/17594349.png")
+				.swiper-slide
+					.values__slide.values__slide--four
+						.values__content 
+							.values__text 
+								p Как мы работаем в QIWI Uzbekistan
+							.values__card 
+								.values__card-numb 04
+								.values__card-title МЫ ЗА ДОВЕРИЕ <br> И СВОБОДУ
+								.values__card-text 
+									p Самостоятельно планируй свой день, время на реализацию задач, выбирай формат работы и одевайся так, как удобно
+							.slider-arrows.values__slider-arrows
+								.slider-arrow.slider-arrow--prev.values-slider-arrow-prev
+									+icon("arrow-left", "slider-arrow__icon")
+								.slider-arrow.slider-arrow--next.values-slider-arrow-next
+									+icon("arrow-right", "slider-arrow__icon")
+						.values__img-wrapper 
+							img(src="https://hhcdn.ru/file/17594351.png")
+	<!-- END VALUES -->
+
+	<!-- START CONDITIONS -->
+	.section.section--long-pt.conditions 
+		.container 
+			.title что мы предлагаем?
+			.conditions__inner
+				.conditions__img(id="img1") 
+					img(src="https://hhcdn.ru/ichameleon/308847.svg")
+				.conditions__img(id="img2") 
+					img(src="https://hhcdn.ru/ichameleon/308848.svg")
+				.conditions__img(id="img3") 
+					img(src="https://hhcdn.ru/ichameleon/308849.svg")
+				.conditions__img(id="img4") 
+					img(src="https://hhcdn.ru/ichameleon/308850.svg")
+				.conditions__img(id="img5") 
+					img(src="https://hhcdn.ru/ichameleon/308852.svg")
+			.swiper-container.conditions__slider
+				.swiper-wrapper 
+					.swiper-slide
+						.conditions__slider-card 
+							.conditions__card-icon 
+								img(src="https://hhcdn.ru/ichameleon/308851.svg")
+							.conditions__card-title ОБУЧЕНИЕ И РАЗВИТИЕ
+							.conditions__card-text 
+								p Возможность проходить обучение на собственной образовательной платформе, большой каталог аудио и текстовых книг, разговорный языковой клуб, своя Академия Экспертов, подход 70/20/10
+					.swiper-slide
+						.conditions__slider-card 
+							.conditions__card-icon 
+								img(src="https://hhcdn.ru/ichameleon/308853.svg")
+							.conditions__card-title ЯРКАЯ И ДРАЙВОВАЯ СРЕДА
+							.conditions__card-text 
+								p Хорошо работаем и весело отдыхаем — это про QIWI Uzbekistan. Мы проводим неформальные мероприятия и небанальные командные встречи.
+					.swiper-slide
+						.conditions__slider-card 
+							.conditions__card-icon 
+								img(src="https://hhcdn.ru/ichameleon/308856.svg")
+							.conditions__card-title СОВРЕМЕННЫЙ ОФИС
+							.conditions__card-text 
+								p Ароматный чай и натуральный кофе, удобный опенспейс и переговорные комнаты, актуальная рабочая техника, игровая консоль, и лаундж зона.
+					.swiper-slide
+						.conditions__slider-card 
+							.conditions__card-icon 
+								img(src="https://hhcdn.ru/ichameleon/308854.svg")
+							.conditions__card-title ЗДОРОВЬЕ И БЛАГОПОЛУЧИЕ
+							.conditions__card-text 
+								p Расширенный полис медицинского страхования со стоматологией, онлайн-медитации, а еще консультации коучей, диетологов и арт‑терапевтов: в QIWI ты почувствуешь заботу о своем физическом и ментальном здоровье
+					.swiper-slide
+						.conditions__slider-card 
+							.conditions__card-icon 
+								img(src="https://hhcdn.ru/ichameleon/308855.svg")
+							.conditions__card-title ОБЕД ЗА СЧЕТ КОМПАНИИ
+							.conditions__card-text 
+								p У нас есть свое кафе, где можно пообедать блюдами национальной и европейской кухни.
+				.slider-arrows.conditions__slider-arrows
+					.slider-arrow.slider-arrow--prev.conditions-slider-arrow-prev
+						+icon("arrow-left", "slider-arrow__icon")
+					.slider-arrow.slider-arrow--next.conditions-slider-arrow-next
+						+icon("arrow-right", "slider-arrow__icon")
+	<!-- END CONDITIONS -->
+
+	<!-- START TEAMS -->
+	.section.section--long-pt.teams
+		.container 
+			.title.title--mb-medium Наши команды
+			.swiper-container.teams__slider 
+				.swiper-wrapper 
+					.swiper-slide.teams__card 
+						.teams__card-wrapper.teams__card-wrapper--one 
+							.teams__card-icon 
+								img(src="https://hhcdn.ru/ichameleon/308857.svg")
+							.teams__card-title РАЗРАБОТКА
+							.teams__card-text 
+								p Эксперты, увлеченные технологиями и инновациями, занимаются разработкой, тестированием, администрированием, аналитикой и дизайном финтех продуктов
+					.swiper-slide.teams__card 
+						.teams__card-wrapper.teams__card-wrapper--two 
+							.teams__card-icon 
+								img(src="https://hhcdn.ru/ichameleon/308858.svg")
+							.teams__card-title РАЗВИТИЕ БИЗНЕСА
+							.teams__card-text 
+								p Анализируют возможности и находят новые решения для текущих и потенциальных партнеров компании. Реализуют амбициозные проекты, используя возможности нашей платформы, карточных сервисов и эквайринга
+					.swiper-slide.teams__card 
+						.teams__card-wrapper.teams__card-wrapper--three 
+							.teams__card-icon 
+								img(src="https://hhcdn.ru/ichameleon/308859.svg")
+							.teams__card-title BACK OFFICE
+							.teams__card-text 
+								p Работает над совершенствованием внутренних процессов и внешних взаимодействий — с партнерами, пользователями и регуляторами.
+				.slider-arrows.teams__slider-arrows
+					.slider-arrow.slider-arrow--prev.teams-slider-arrow-prev
+						+icon("arrow-left", "slider-arrow__icon")
+					.slider-arrow.slider-arrow--next.teams-slider-arrow-next
+						+icon("arrow-right", "slider-arrow__icon")
+	<!-- END TEAMS -->
+
+	<!-- START GALLERY -->
+	.section.section--long.gallery 
+		.container 
+			.gallery__wrapper
+				.gallery__icon-star
+					img(src="https://hhcdn.ru/ichameleon/308855.svg") 
+				.gallery__icon-flame
+					img(src="https://hhcdn.ru/ichameleon/308853.svg") 
+				.gallery__icon-light
+					img(src="https://hhcdn.ru/ichameleon/308862.svg") 
+				.title.title--mb-medium.title--white QIWI People
+				.swiper-container.gallery__slider 
+					.swiper-wrapper 
+						.swiper-slide
+							.gallery__slide
+								img(src="https://hhcdn.ru/ichameleon/308860.jpg")
+						.swiper-slide
+							.gallery__slide
+								img(src="https://hhcdn.ru/ichameleon/308867.jpg")
+						.swiper-slide
+							.gallery__slide
+								img(src="https://hhcdn.ru/ichameleon/308861.jpg")
+						.swiper-slide
+							.gallery__slide
+								img(src="https://hhcdn.ru/ichameleon/308868.jpg")
+						.swiper-slide
+							.gallery__slide
+								img(src="https://hhcdn.ru/ichameleon/308865.jpg")
+						.swiper-slide
+							.gallery__slide
+								img(src="https://hhcdn.ru/ichameleon/308863.jpg")
+						.swiper-slide
+							.gallery__slide
+								img(src="https://hhcdn.ru/ichameleon/308864.jpg")
+						.swiper-slide
+							.gallery__slide
+								img(src="https://hhcdn.ru/ichameleon/308866.jpg")
+					.slider-arrows.gallery__slider-arrows
+						.slider-arrow.slider-arrow--prev.gallery-slider-arrow-prev
+							+icon("arrow-left", "slider-arrow__icon")
+						.slider-arrow.slider-arrow--next.gallery-slider-arrow-next
+							+icon("arrow-right", "slider-arrow__icon")
+			.gallery__btn
+				a(href="https://www.qiwi.uz/" target="_blank") Хочу в QIWI Uzbekistan
+	<!-- END GALLERY -->
+
+	<!-- START MODAL -->
+		+modal("one")
+			.conditions__card
+				.conditions__card-icon 
+					img(src="https://hhcdn.ru/ichameleon/308851.svg")
+				.conditions__card-title ОБУЧЕНИЕ И РАЗВИТИЕ
+				.conditions__card-text 
+					p Возможность проходить обучение на собственной образовательной платформе, большой каталог аудио и текстовых книг, разговорный языковой клуб, своя Академия Экспертов, подход 70/20/10
+		+modal("two")
+			.conditions__card
+				.conditions__card-icon 
+					img(src="https://hhcdn.ru/ichameleon/308853.svg")
+				.conditions__card-title ЯРКАЯ И ДРАЙВОВАЯ СРЕДА
+				.conditions__card-text 
+					p Хорошо работаем и весело отдыхаем — это про QIWI Uzbekistan. Мы проводим неформальные мероприятия и небанальные командные встречи.
+		+modal("three")
+			.conditions__card
+				.conditions__card-icon 
+					img(src="https://hhcdn.ru/ichameleon/308856.svg")
+				.conditions__card-title СОВРЕМЕННЫЙ ОФИС
+				.conditions__card-text 
+					p Ароматный чай и натуральный кофе, удобный опенспейс и переговорные комнаты, актуальная рабочая техника, игровая консоль, и лаундж зона.
+		+modal("four")
+			.conditions__card
+				.conditions__card-icon 
+					img(src="https://hhcdn.ru/ichameleon/308854.svg")
+				.conditions__card-title ЗДОРОВЬЕ И БЛАГОПОЛУЧИЕ
+				.conditions__card-text 
+					p Расширенный полис медицинского страхования со стоматологией, онлайн-медитации, а еще консультации коучей, диетологов и арт‑терапевтов: в QIWI ты почувствуешь заботу о своем физическом и ментальном здоровье
+		+modal("five")
+			.conditions__card
+				.conditions__card-icon 
+					img(src="https://hhcdn.ru/ichameleon/308855.svg")
+				.conditions__card-title ОБЕД ЗА СЧЕТ КОМПАНИИ
+				.conditions__card-text 
+					p У нас есть свое кафе, где можно пообедать блюдами национальной и европейской кухни.
+	<!-- END MODAL -->
